@@ -1,0 +1,54 @@
+site_name: "Case de Data Science"
+site_author: "Equipe"
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Alternar para modo escuro
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para modo claro
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: true
+      kernel_name: python3
+      ignore_h1_titles: true
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - pymdownx.emoji
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rferreira13
+      name: "GitHub — rferreira13"
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rafael-ferreira-data-scientist/
+      name: "LinkedIn — Rafael Marinho Ferreira"
+
+nav:
+  - Home: index.md
+  - Case: answers.ipynb
